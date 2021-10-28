@@ -35,8 +35,8 @@ Broadfields,53,0,0,1
 Oxford Road,64,0,0,1
 Milvery Way,2,0,0,1
 Elm Tree Close,10,0,0,1
-Cowley Road,114,0,0,1
-Cardinal House,79,0,0,1
+"Cowley Road, Littlemore",114,0,0,1
+Cardinal Close,79,0,0,1
 Long Wall,12,0,0,1
 Alice Smith House,95,0,0,1
 Giles Close,11,0,0,1
@@ -47,7 +47,7 @@ Fairlie Road,16,1,0,0
 Addison Drive,19,1,0,1
 Champion Way,50,0,0,1
 Hardings Close,16,0,0,1
-Barneri Close,24,0,0,1
+Barberi Close,24,0,0,1
 Hillsale Piece,17,0,0,1
 Vicarage Close,45,0,0,1
 Northfield Close,34,0,0,1
@@ -62,8 +62,8 @@ St Nicholas Road,89,0,0,1
 St Mary's Close,6,0,0,1
 Carpenter Close,15,0,0,1
 Lakefield Road,51,0,0,1
-Compass Close,,1,0,0
-Pulker Close,,1,0,0
-Mayfair Road,,1,0,0
-,,,,
-Total,2385,,,
+Compass Close,14,1,0,0
+Pulker Close,18,1,0,0
+Mayfair Road,55,1,0,0
+Littlemore Road,49,1,0,0
+Mandelbrote Drive,139,0,0,1
