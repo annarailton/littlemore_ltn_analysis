@@ -1,6 +1,6 @@
 beautifulsoup4==4.10.0
 black==21.9b0
-geopy==2.2.0
+geopandas==0.10.2
 isort==5.9.3
 jupyterlab==3.2.1
 jupyterlab-code-formatter==1.4.10
