@@ -11,3 +11,5 @@
 | [`street_counts.csv`](street_counts.csv) | Counts of responses from each street, before anonymisation (used for coverage map) |
 | [`street_data.csv`](street_data.csv) | Data about each street, e.g. postcode, lat-long, driving distance to LTN etc. |
 | [`mapping/`](mapping) | QGIS shapefiles and `geojson` for use in mapping |
+
+:warning: note that there are three more data points in this dataset then used in the report. This was because of three late entries to the dataset. 
