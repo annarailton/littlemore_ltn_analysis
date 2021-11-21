@@ -29,7 +29,7 @@ Setting environment variables
 You need two environment variables for this script to work:
 
 - USER_EMAIL (for geo-coding)
-- Google Directions API key
+- GOOGLE_DIRECTIONS_API_KEY (for Google Directions API to work)
 
 Set both by doing:
 
@@ -38,12 +38,22 @@ Set both by doing:
 
 before running this script.
 
-Where to start
---------------
+CSV data file
+-------------
 
-- If you only have street names: get postcodes from `postcode_lookup.py`
-- If you have street names and postcodes: get (lat, long) using `get_lat_long_from_postcode`
-- If you have street names, postcodes and (lat, long)
+The minimum it needs is a column called `street` of street names.
+
+If you only have these, get postcodes from `postcode_lookup.py` (we geocode from postcode to get lat-long). Put these in
+a column called `postcode`.
+
+The `latitude` and `longitude` columns will be calculated for you if you don't have them.
+
+
+Notes
+-----
+
+- `from` can be many locations, `to` can only be one (here: Templars Shopping Park)
+- See README.md at top of directory for installation of requirements
 """
 
 import argparse
@@ -118,6 +128,12 @@ def update_street_data_with_distances_to_location(
     """Update street data CSV file with lat-long and LTN distance data.
 
     Overwrites the existing file to help with unnecessary API spamming.
+
+    Args:
+        csv_file (pathlib.Path): Location of data CSV file
+        loc_to_name_short (str): short location to name, used in column name
+        lat_to (float): Latitude of `to` location
+        lon_to (float): Longitude of `to` location
     """
     df = pd.read_csv(csv_file)
 
